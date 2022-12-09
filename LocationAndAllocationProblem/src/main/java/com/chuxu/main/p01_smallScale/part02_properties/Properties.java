@@ -85,19 +85,7 @@ public class Properties {
 
     //性质5
     public static LinkedHashMap<Community, Candidate> property05(List<Candidate> F_Minus_F0_Minus_FF0, List<Community> EE5) {
-//        //复制一份再去进行集合运算，不对主函数中的造成影响
-//        List<Candidate> F_temp = new ArrayList<>(MainAlgorithm_SmallScale.F);
-//        List<Candidate> F0_temp = new ArrayList<>(MainAlgorithm_SmallScale.F0);
-//        List<Candidate> FF0_temp = new ArrayList<>(MainAlgorithm_SmallScale.FF0);
-//        List<Community> E_temp = new ArrayList<>(MainAlgorithm_SmallScale.E);
-//        List<Community> E1_temp = new ArrayList<>(MainAlgorithm_SmallScale.E1);
-//        List<Community> EE1_temp = new ArrayList<>(MainAlgorithm_SmallScale.EE1);
-//        //计算F\F0\FF0
-//        F_temp.removeAll(F0_temp);
-//        F_temp.removeAll(FF0_temp);
-//        //计算EE5=E\E1\EE1
-//        E_temp.removeAll(E1_temp);
-//        E_temp.removeAll(EE1_temp);
+
         //存储孤立居民点及其对应的备选点的键值对
         LinkedHashMap<Community, Candidate> singleCommunityCandidate = new LinkedHashMap<>();
         //遍历各居民点E\E1\EE1=EE5和备选点集合F\F0\FF0，寻找孤立的备选点
