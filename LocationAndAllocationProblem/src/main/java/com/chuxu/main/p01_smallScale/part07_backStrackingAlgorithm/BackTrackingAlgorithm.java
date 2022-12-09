@@ -19,11 +19,7 @@ public class BackTrackingAlgorithm {
         System.out.println("============================================================================");
         System.out.println("现在进入回溯子算法，先看看当前所有结点的情况：");
         printAll();
-//        //把F5克隆一份，然后按照覆盖最优目标函数值从小到大排序，作为取点的完整列表，贯穿整个回溯子算法
-//        List<Candidate> F5_bak = new ArrayList<>();
-//        for (Candidate candidate : F) {
-//            F5_bak.add(candidate.clone());
-//        }
+
         //进入回溯算法
         backTracking();
     }
